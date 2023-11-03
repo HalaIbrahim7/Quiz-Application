@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('image/8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 9px 6px 9px rgb(82, 81, 81);
+}
+
+.header {
+    background-color: #d5e2e7;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: medium;
+    color: rgb(39, 38, 38);
+
+}
+
+.form {
+    padding: 20px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    border: 2px solid #d8d1d1;
+}
+
+.form-control.success input {
+    border: 2px solid rgb(26, 167, 26);
+}
+
+.form-control.error input {
+    border: 2px solid rgb(228, 29, 22);
+}
+
+.form-control small {
+    position: absolute;
+    margin: 3px;
+    visibility: hidden;
+}
+
+button {
+    background: linear-gradient(to right, rgb(36, 125, 141), rgb(90, 68, 109));
+    color: #FFF;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #f8f8f8;
+    cursor: pointer;
+    border-radius: 16px;
+}

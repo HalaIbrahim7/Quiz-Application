@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Arial;
+  font-size: 16px;
+  margin: 0;
+  background-image: url('image/8.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+}
+
+.quiz-container {
+  margin: 20px auto;
+  width: 450px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 9px 6px 9px rgb(82, 81, 81);
+  margin-left: 496px;
+
+}
+
+.quiz-container .quiz-info {
+  display: flex;
+  background-color: #d5e2e7;
+  padding: 6px;
+  justify-content: space-between;
+  padding: 20px 26px 0px;
+  margin: -10px -10px -1px;
+  font-size: 18px;
+}
+
+.quiz-container .quiz-info .countdown {
+  flex: 1;
+  padding-bottom: 13px;
+  text-align: right;
+
+}
+
+.quiz-container .quiz-info .count {
+  flex: 1;
+  text-align: right;
+
+}
+
+.quiz-container .quiz-area {
+
+  padding: 12px;
+  margin-top: 5px;
+}
+
+.quiz-container .quiz-area h3 {
+  margin: 0;
+}
+
+.quiz-container .answers-area {
+
+  padding: 0 20px 20px;
+}
+
+.quiz-container .answers-area .answer {
+  background-color: #f9f9f9;
+  padding: 15px;
+}
+
+.quiz-container .answers-area .answer:hover {
+  background-color: #d5e2e7;
+}
+
+.quiz-container .answers-area .answer:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.quiz-container .answers-area .answer input[type="Radio"]:checked+label {
+  color: rgb(63, 177, 197);
+}
+
+.quiz-container .answers-area .answer label {
+  cursor: pointer;
+  font-weight: bold;
+  color: #777;
+  font-size: 14px;
+  margin-left: 5px;
+  position: relative;
+  top: -1px;
+}
+
+.quiz-container .submit-button {
+  background: linear-gradient(to right, rgb(36, 125, 141), rgb(90, 68, 109));
+  ;
+  display: block;
+  width: 95%;
+  padding: 4px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 4px auto;
+}
+
+.quiz-container .submit-button:focus {
+  outline: none;
+}
+
+.quiz-container .count {
+  border-top: 1px solid #dfdfdf;
+  background-color: #fff;
+  display: flex;
+  padding: 4px;
+  font-size: 13px;
+}
+
+.quiz-container .count .spans {
+  flex: 1;
+  display: flex;
+}
+
+.quiz-container .results span {
+  font-weight: bold;
+}
+
+.quiz-container .results span.fail {
+  color: #dc0a0a;
+}
+
+.quiz-container .results span.good {
+  color: rgb(0, 89, 255);
+}
+
+.quiz-container .results span.excellent {
+  color: rgb(0, 128, 90);
+}
+
+.info {
+  font-size: medium;
+  color: black
+}
+
+.mark-container {
+  background-color: rgb(228, 221, 231);
+  float: right;
+  border: black 1px solid;
+  width: 167px;
+  margin: 5%;
+  padding: 5px;
+  color: rgb(92, 86, 86);
+  font-weight: bold;
+  border: whitesmoke 5px solid;
+
+
+}
+
+.mark-container span {
+  font-weight: bold;
+  color: rgb(99, 75, 121);
+  border-bottom: rgb(241, 238, 238) 3px solid;
+}
+
+.prev-button,
+.next-button,
+.mark-button {
+  margin-left: 79px;
+  margin-bottom: 5px;
+  background-color: rgb(99, 75, 121);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover,
+.mark-button:hover {
+  background-color: rgb(36, 125, 141);
+  box-shadow: gray 1px 1px 1px;
+}
+
+.fullName {
+  color: rgb(36, 125, 141);
+}
+
+.text {
+  margin: 20px;
+}
